@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="yala_communities">
+        <item>Okpoma</item>
+        <item>Okuku</item>
+        <item>Yahe</item>
+        <item>Ugaga</item>
+        <item>Oloko</item>
+        <item>Imaje</item>
+        <item>Oke</item>
+        <item>Echumoga</item>
+        <item>Woda</item>
+        <item>Ebo</item>
+        <item>Igede Edii Nation</item>
+        <item>Anyadaha</item>
+        <item>Anyugbe</item>
+        <item>Eminyi</item>
+        <item>Ibiilla</item>
+        <item>Igbakobor</item>
+        <item>Opiriku</item>
+        <item>Itekpa</item>
+        <item>Maa</item>
+        <item>Wooye</item>
+        <item>Uchu</item>
+        <item>Osina</item>
+        <item>Mbom</item>
+        <item>Aliforkpa</item>
+        <item>Echumofana</item>
+    </string-array>
+</resources>

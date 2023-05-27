@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Yala</string>
+    <string name="title_home">Home</string>
+    <string name="title_event">Events</string>
+    <string name="title_community"> Yala Communities</string>
+    <string name="title_menu">Menu</string>
+
+    <string name="yala_consonants">Yala Consonants</string>
+    <string name="yala_tone">Yala Tone</string>
+    <string name="yala_part_of_speech">Yala part of Speech</string>
+    <string name="yala_bible_story">Yala Bible Story</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="days_of_the_week">Days of the week</string>
+    <string name="special_event">Special Event</string>
+
+    <string name="yala_vowel">Yala Vowels</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.kgpsofts.tech.yalla.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.kgpsofts.tech.yalla.ui.community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/navigation_menus"
+        android:name="com.kgpsofts.tech.yalla.ui.menus.MenusFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_menus" >
+        <action
+            android:id="@+id/action_navigation_menus_to_consonantFragment"
+            app:destination="@id/consonantFragment"
+            app:popUpTo="@id/navigation_menus"/>
+        <action
+            android:id="@+id/action_navigation_menus_to_vowelFragment"
+            app:destination="@id/vowelFragment"
+            app:popUpTo="@id/navigation_menus"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_event"
+        android:name="com.kgpsofts.tech.yalla.ui.events.EventFragment"
+        android:label="@string/title_event"
+        tools:layout="@layout/fragment_event" >
+        <action
+            android:id="@+id/action_navigation_event_to_dayWeekFragment"
+            app:destination="@id/dayWeekFragment"
+            app:popUpTo="@id/navigation_event" />
+        <action
+            android:id="@+id/action_navigation_event_to_specialEventFragment"
+            app:destination="@id/specialEventFragment"
+            app:popUpTo="@id/navigation_event" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayWeekFragment"
+        android:name="com.kgpsofts.tech.yalla.ui.events.derive.DayWeekFragment"
+        android:label="@string/days_of_the_week"
+        tools:layout="@layout/fragment_day_week" />
+    <fragment
+        android:id="@+id/specialEventFragment"
+        android:name="com.kgpsofts.tech.yalla.ui.events.derive.SpecialEventFragment"
+        android:label="@string/special_event"
+        tools:layout="@layout/fragment_special_event" />
+    <fragment
+        android:id="@+id/consonantFragment"
+        android:name="com.kgpsofts.tech.yalla.ui.menus.derive.ConsonantFragment"
+        android:label="@string/yala_consonants"
+        tools:layout="@layout/fragment_consonant" />
+    <fragment
+        android:id="@+id/vowelFragment"
+        android:name="com.kgpsofts.tech.yalla.ui.menus.derive.VowelFragment"
+        android:label="@string/yala_vowel"
+        tools:layout="@layout/fragment_vowel" />
+</navigation>
